@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TD1</title>
-    <link rel="stylesheet" href="td1.css">
-    <script type="text/javascript" src="td1.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="task.js"></script>
 </head>
 <header>
     <h1>TD1</h1>
@@ -15,52 +15,19 @@
     <section>
         <form id="form-tache", autocomplete="off">
             <label><p><input type="text" id="input-titre" placeholder="Entrez un titre"></p></label>
-            <label><p ><input type="text" id="input-description" placeholder="Entrez une description"></p></label>
-            <label><input type="checkbox" id="valider">Valider</label>
+            <label><p ><input type="text" id="input-desc" placeholder="Entrez une description"></p></label>
+            <label><input type="checkbox" id="input-done">Valider</label>
             <label><p >Id: <input type="number" id="input-id" placeholder="Entrez un ID"></p></label>
             <label><button id="bouton-task">+</button>Ajouter une tâche</label><br>
         </form>
     </section>
     <h2>Liste de tâches</h2>
     <section> 
-        <ol>
-        <div class="carte">
-                <input type="checkbox" class="checkCarte"><label for="checkCarte">
-                    <h3>Titre de la tâche</h3>
-                    <p>Id: 0</p>
-                    <p><button>Supprimer</button></p>
-                </label>
-            </div>
-        <div class="carte">
-                <input type="checkbox" class="checkCarte"><label for="checkCarte">
-                    <h3>Titre de la tâche</h3>
-                    <p>Id: 1</p>
-                    <p><button>Supprimer</button></p>
-                </label>
-            </div>
-        <div class="carte">
-                <input type="checkbox" class="checkCarte"><label for="checkCarte">
-                    <h3>Titre de la tâche</h3>
-                    <p>Id: 2</p>
-                    <p><button>Supprimer</button></p>
-                </label>
-            </div>
-        <div class="carte">
-                <input type="checkbox" class="checkCarte"><label for="checkCarte">
-                    <h3>Titre de la tâche</h3>
-                    <p>Id: 3</p>
-                    <p><button>Supprimer</button></p>
-                </label>
-            </div>
-        <div class="carte">
-                <input type="checkbox" class="checkCarte"><label for="checkCarte">
-                    <h3>Titre de la tâche</h3>
-                    <p>Id: 4</p>
-                    <p><button>Supprimer</button></p>
-                </label>
-            </div>
-        </ol>
-    
+        <div id="liste-taches"></div>
+    </section>
+    <h2>Corbeille (Tâches supprimées)</h2>
+    <section> 
+        <div id="liste-poubelle"></div>
     </section>
     <footer>
         <p>Copyright © 2026 William LESAGE</p>

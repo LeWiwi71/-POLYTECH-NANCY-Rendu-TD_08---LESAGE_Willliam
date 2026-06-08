@@ -1,0 +1,57 @@
+
+header,
+section,
+footer {
+  border: 1px solid #e5f504;
+  border-radius: 15px;
+  background: rgb(253, 10, 10);
+
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    font-family : Greek-freak, sans-serif;
+}
+
+p {
+    font-family : Greek-freak, sans-serif;
+}
+
+label {
+    font-family : Greek-freak, sans-serif;
+    font-size: 1.2rem;
+}
+
+.carte {
+    border-radius: 30px;
+    background: lightyellow;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+    margin: 20px;
+}
+.carte:has(.checkCarte:checked) {
+    background: yellow;
+    text-decoration: line-through;
+}
+
+.checkCarte {
+    accent-color: red;
+}
+
+
+.checkCarte:checked{
+    accent-color: #6aa842;
+    
+}
+
+
+.bg-lightyellow {
+    background: lightyellow;
+}
+.bg-yellow {
+    background:yellow
+}

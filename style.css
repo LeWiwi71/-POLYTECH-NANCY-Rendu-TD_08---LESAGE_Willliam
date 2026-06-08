@@ -33,8 +33,12 @@ label {
     display: grid;
     margin: 20px;
 }
-.carte:has(.checkCarte:checked) {
+.carte-faite {
+     border-radius: 30px;
     background: yellow;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+    margin: 20px;
     text-decoration: line-through;
 }
 

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TD1</title>
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="task.js"></script>
+    <script type="text/javascript" src="task.js" defer></script>
 </head>
 <header>
     <h1>TD1</h1>
@@ -18,15 +18,15 @@
             <label><p ><input type="text" id="input-desc" placeholder="Entrez une description"></p></label>
             <label><input type="checkbox" id="input-done">Valider</label>
             <label><p >Id: <input type="number" id="input-id" placeholder="Entrez un ID"></p></label>
-            <label><button id="bouton-task">+</button>Ajouter une tâche</label><br>
+            <label><button id="submit">+</button>Ajouter une tâche</label><br>
         </form>
     </section>
     <h2>Liste de tâches</h2>
     <section> 
         <div id="liste-taches"></div>
     </section>
-    <h2>Corbeille (Tâches supprimées)</h2>
-    <section> 
+    <h2>Poubelle</h2>
+    <section>
         <div id="liste-poubelle"></div>
     </section>
     <footer>
